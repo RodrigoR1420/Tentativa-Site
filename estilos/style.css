@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #A3BFBF;
+}
+
+header{
+    background-color: #012619;
+}
+
+header > h1{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#burger{
+        background-color: #014029;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer;
+}
+
+#burger:hover{
+    background-color: #0D0D0D;
+    transition: .8s;
+}
+
+#itens{
+    display: none;
+}
+
+a > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#itens > ul{
+    list-style-type: none;
+}
+
+#itens > ul > li > a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #027353;
+    border-top:2px solid black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+
+#itens > ul > li> a:hover{
+    background-color: #A3BFBF;
+    transition: .8s;
+}
+
+.first{
+    background-color: #4e9e87;
+    margin: auto;
+    width: 90vw;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.first > h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.first > p{
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    padding: 20px 0 10px;
+    color: #333;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+.card .btn {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
