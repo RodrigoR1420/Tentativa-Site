@@ -67,7 +67,6 @@ a > img{
 .first{
     background-color: #4e9e87;
     margin: auto;
-    width: 90vw;
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -161,7 +160,6 @@ a > img{
 .first{
     background-color: #4e9e87;
     margin: auto;
-    width: 90vw;
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -183,6 +181,8 @@ a > img{
     padding: 20px;
 }
 
-.mapas > iframe{
-    width: 100%;
+footer{
+    text-align: center;
+    background-color: #0D0D0D;
+    color: white;
 }
